@@ -1,0 +1,119 @@
+iso,imf_classification,old_city_name,new_city_name,continent,city,country,gdp_ppp_2019,population2,big_region
+AUS,Advanced Economies,Melbourne,NA,Australia,Melbourne,Australia,52613.85,4529500,English
+AUS,Advanced Economies,Brisbane,NA,Australia,Brisbane,Australia,52613.85,2360241,English
+AUS,Advanced Economies,Sydney,NA,Australia,Sydney,Australia,52613.85,4840600,English
+AUT,Advanced Economies,Graz,NA,Europe,Graz,Austria,58662.928,289440,W Europe
+AUT,Advanced Economies,Wien,Vienna,Europe,Vienna,Austria,58662.928,1973403,W Europe
+AUT,Advanced Economies,Salzburg,NA,Europe,Salzburg,Austria,58662.928,155021,W Europe
+BEL,Advanced Economies,Gent,NA,Europe,Gent,Belgium,54533.592,265086,W Europe
+BEL,Advanced Economies,Antwerpen,Antwerp,Europe,Antwerp,Belgium,54533.592,529247,W Europe
+BEL,Advanced Economies,Bruxelles,Brussels,Europe,Brussels,Belgium,54533.592,1743000,W Europe
+BGD,Emerging and Developing Economies,Dhaka,NA,Europe,Dhaka,Bangladesh,6062.01,18627000,Asia-LatAm-MEA
+BHR,Emerging and Developing Economies,Manama,NA,Europe,Manama,Bahrain,52243.97,436000,Asia-LatAm-MEA
+BIH,Emerging and Developing Economies,Sarajevo,NA,Europe,Sarajevo,Bosnia and Herzegovina,14999.991,419957,E Europe
+BLR,Emerging and Developing Economies,Gomel,Homyel,Europe,Homyel,Belarus,20084.137,510300,E Europe
+BLR,Emerging and Developing Economies,Brest,NA,Europe,Brest,Belarus,20084.137,340723,E Europe
+BLR,Emerging and Developing Economies,Minsk,NA,Europe,Minsk,Belarus,20084.137,2009786,E Europe
+BRA,Emerging and Developing Economies,Brasaï¿½Lia,Brasilia,Latin America,Brasilia,Brazil,15427.072,3039444,Asia-LatAm-MEA
+CAN,Advanced Economies,Toronto,NA,US/Canada,Toronto,Canada,51667.525,5429524,English
+CAN,Advanced Economies,Calgary,NA,US/Canada,Calgary,Canada,51667.525,1239220,English
+CAN,Advanced Economies,Edmonton,NA,US/Canada,Edmonton,Canada,51667.525,1062643,English
+CHE,Advanced Economies,Genave,Geneva,Europe,Geneva,Switzerland,73656.336,201818,W Europe
+CHE,Advanced Economies,Zaerich,Zurich,Europe,Zurich,Switzerland,73656.336,436332,W Europe
+CHE,Advanced Economies,Basel,NA,Europe,Basel,Switzerland,73656.336,177827,W Europe
+CHL,Emerging and Developing Economies,Concepcion,NA,Latin America,Concepcion,Chile,24919.764,719944,Asia-LatAm-MEA
+CHL,Emerging and Developing Economies,Santiago,NA,Latin America,Santiago,Chile,24919.764,7171000,Asia-LatAm-MEA
+CHL,Emerging and Developing Economies,Viaï¿½A Del Mar,Vina del Mar,Latin America,Vina del Mar,Chile,24919.764,332875,Asia-LatAm-MEA
+CZE,Advanced Economies,Brno,NA,Europe,Brno,Czech Republic,42980.561,382405,Asia-LatAm-MEA
+CZE,Advanced Economies,Ostrava,NA,Europe,Ostrava,Czech Republic,42980.561,284982,Asia-LatAm-MEA
+CZE,Advanced Economies,Praha,Prague,Europe,Prague,Czech Republic,42980.561,1335084,Asia-LatAm-MEA
+DEU,Advanced Economies,Maenchen,Munich,Europe,Munich,Germany,56479.067,2606021,W Europe
+DEU,Advanced Economies,Kaï¿½Ln,Cologne,Europe,Cologne,Germany,56479.067,1083498,W Europe
+DEU,Advanced Economies,Berlin,NA,Europe,Berlin,Germany,56479.067,4473101,W Europe
+DNK,Advanced Economies,Kaï¿½Benhavn,Copenhagen,Europe,Copenhagen,Denmark,59480.223,1366301,W Europe
+DNK,Advanced Economies,Odense,NA,Europe,Odense,Denmark,59480.223,180863,W Europe
+DNK,Advanced Economies,Aarhus,NA,Europe,Aarhus,Denmark,59480.223,285273,W Europe
+EGY,Emerging and Developing Economies,Alexandria,NA,Asia,Alexandria,Egypt,13112.594,4870000,Asia-LatAm-MEA
+EGY,Emerging and Developing Economies,Cairo,NA,Asia,Cairo,Egypt,13112.594,20296000,Asia-LatAm-MEA
+EGY,Emerging and Developing Economies,Giza,NA,Asia,Giza,Egypt,13112.594,5598402,Asia-LatAm-MEA
+ESP,Advanced Economies,Palma,NA,Europe,Palma,Spain,42587.263,550000,W Europe
+ESP,Advanced Economies,Barcelona,NA,Europe,Barcelona,Spain,42587.263,4800000,W Europe
+ESP,Advanced Economies,Madrid,NA,Europe,Madrid,Spain,42587.263,6211000,W Europe
+FIN,Advanced Economies,Tampere,NA,Europe,Tampere,Finland,50686.883,334112,W Europe
+FIN,Advanced Economies,Turku,NA,Europe,Turku,Finland,50686.883,252468,W Europe
+FIN,Advanced Economies,Helsinki,NA,Europe,Helsinki,Finland,50686.883,1268296,W Europe
+FRA,Advanced Economies,Nice,NA,Europe,Nice,France,49792.704,342669,W Europe
+FRA,Advanced Economies,Lyon,NA,Europe,Lyon,France,49792.704,522969,W Europe
+FRA,Advanced Economies,Paris,NA,Europe,Paris,France,49792.704,11060000,W Europe
+GBR,Advanced Economies,Manchester,NA,Europe,Manchester,United Kingdom,49291.814,2705000,English
+GBR,Advanced Economies,Glasgow,NA,Europe,Glasgow,United Kingdom,49291.814,626410,English
+GBR,Advanced Economies,London,NA,Europe,London,United Kingdom,49291.814,11262000,English
+GRC,Advanced Economies,Thessaloniki,NA,Europe,Thessaloniki,Greece,30918.255,824676,W Europe
+GRC,Advanced Economies,Rodos,NA,Europe,Rodos,Greece,30918.255,56969,W Europe
+GRC,Advanced Economies,Athina,Athens,Europe,Athens,Greece,30918.255,3041131,W Europe
+HRV,Advanced Economies,Zagreb,NA,Europe,Zagreb,Croatia,30570.029,809268,E Europe
+HRV,Advanced Economies,Split,NA,Europe,Split,Croatia,30570.029,178102,E Europe
+HRV,Advanced Economies,Rijeka,NA,Europe,Rijeka,Croatia,30570.029,191293,E Europe
+HUN,Emerging and Developing Economies,Gyaï¿½R,Gyor,Asia,Gyor,Hungary,34445.296,246159,E Europe
+HUN,Emerging and Developing Economies,Budapest,NA,Asia,Budapest,Hungary,34445.296,2997958,E Europe
+HUN,Emerging and Developing Economies,Debrecen,NA,Asia,Debrecen,Hungary,34445.296,328642,E Europe
+IDN,Emerging and Developing Economies,Jakarta,NA,Asia,Jakarta,Indonesia,12484.361,33756000,Asia-LatAm-MEA
+IDN,Emerging and Developing Economies,Badung,NA,Asia,Badung,Indonesia,12484.361,NA,Asia-LatAm-MEA
+IRL,Advanced Economies,Cork,NA,Europe,Cork,Ireland,90719.122,222333,English
+IRL,Advanced Economies,Dublin,NA,Europe,Dublin,Ireland,90719.122,1173179,English
+IRL,Advanced Economies,Galway,NA,Europe,Galway,Ireland,90719.122,79504,English
+ISL,Advanced Economies,Reykjavaï¿½K,Reykjavik,Europe,Reykjavik,Iceland,60075.946,135688,W Europe
+ISR,Advanced Economies,Jerusalem,NA,Europe,Jerusalem,Israel,42985.531,919438,Asia-LatAm-MEA
+ISR,Advanced Economies,Haifa,NA,Europe,Haifa,Israel,42985.531,600000,Asia-LatAm-MEA
+ISR,Advanced Economies,Tel Aviv,Tel Aviv-Yafo,Europe,Tel Aviv-Yafo,Israel,42985.531,1388400,Asia-LatAm-MEA
+ITA,Advanced Economies,Torino,Turin,Europe,Turin,Italy,44704.061,870952,W Europe
+ITA,Advanced Economies,Milano,Milan,Europe,Milan,Italy,44704.061,1366180,W Europe
+ITA,Advanced Economies,Roma,Rome,Europe,Rome,Italy,44704.061,2872800,W Europe
+KAZ,Emerging and Developing Economies,Karaganda,NA,Asia,Karaganda,Kazakhstan,27295.322,NA,Asia-LatAm-MEA
+KEN,Emerging and Developing Economies,Nairobi,NA,Africa,Nairobi,Kenya,5135.16,5545000,Asia-LatAm-MEA
+LBN,Emerging and Developing Economies,Beirut,NA,Asia,Beirut,Lebanon,15107.916,361366,Asia-LatAm-MEA
+LKA,Emerging and Developing Economies,Colombo,NA,Asia,Colombo,Sri Lanka,14217.44,2323826,Asia-LatAm-MEA
+LTU,Advanced Economies,Klaipeda,NA,Europe,Klaipeda,Lithuania,38835.71,164310,E Europe
+LTU,Advanced Economies,Vilnius,NA,Europe,Vilnius,Lithuania,38835.71,708203,E Europe
+LTU,Advanced Economies,Kaunas,NA,Europe,Kaunas,Lithuania,38835.71,381007,E Europe
+LUX,Advanced Economies,Bertrange,NA,Europe,Bertrange,Luxembourg,121140.521,NA,W Europe
+LUX,Advanced Economies,Luxembourg City,Luxembourg,Europe,Luxembourg,Luxembourg,121140.521,132780,W Europe
+MAC,Advanced Economies,Macau,NA,Asia,Macau,Macao SAR,125026.353,568700,Asia-LatAm-MEA
+MCO,Advanced Economies,Monaco,NA,Europe,Monaco,Principality of Monaco,NA,36371,W Europe
+MDA,Emerging and Developing Economies,Chisinau,NA,Europe,Chisinau,Moldova,13241.015,702300,E Europe
+MKD,Emerging and Developing Economies,Skopje,NA,Europe,Skopje,North Macedonia,17421.087,640000,E Europe
+MNE,Emerging and Developing Economies,Podgorica,NA,Europe,Podgorica,Montenegro,22473.329,150977,E Europe
+MYS,Emerging and Developing Economies,Petaling Jaya,NA,Asia,Petaling Jaya,Malaysia,29097.34,638516,Asia-LatAm-MEA
+MYS,Emerging and Developing Economies,Kuala Lumpur,NA,Asia,Kuala Lumpur,Malaysia,29097.34,8911000,Asia-LatAm-MEA
+MYS,Emerging and Developing Economies,Johor Bahru,NA,Asia,Johor Bahru,Malaysia,29097.34,497097,Asia-LatAm-MEA
+NLD,Advanced Economies,Rotterdam,NA,Europe,Rotterdam,Netherlands,59686.618,631155,W Europe
+NLD,Advanced Economies,'S-Gravenhage,NA,Europe,'S-Gravenhage,Netherlands,59686.618,NA,W Europe
+NLD,Advanced Economies,Amsterdam,NA,Europe,Amsterdam,Netherlands,59686.618,1459402,W Europe
+NOR,Advanced Economies,Stavanger,NA,Europe,Stavanger,Norway,66641.423,237369,W Europe
+NOR,Advanced Economies,Trondheim,NA,Europe,Trondheim,Norway,66641.423,194860,W Europe
+NOR,Advanced Economies,Oslo,NA,Europe,Oslo,Norway,66641.423,1064235,W Europe
+NZL,Advanced Economies,Wellington,NA,Europe,Wellington,New Zealand,43957.557,418500,English
+NZL,Advanced Economies,Christchurch,NA,Europe,Christchurch,New Zealand,43957.557,383200,English
+NZL,Advanced Economies,Auckland,NA,Europe,Auckland,New Zealand,43957.557,1346091,English
+PER,Emerging and Developing Economies,Lima,NA,Latin America,Lima,Peru,13432.869,10320000,Asia-LatAm-MEA
+POL,Emerging and Developing Economies,Wroclaw,NA,Europe,Wroclaw,Poland,34669.21,672929,E Europe
+POL,Emerging and Developing Economies,Warszawa,Warsaw,Europe,Warsaw,Poland,34669.21,1860281,E Europe
+POL,Emerging and Developing Economies,Krakaï¿½W,Krakow,Europe,Krakow,Poland,34669.21,800653,E Europe
+PRT,Advanced Economies,Porto,NA,Europe,Porto,Portugal,36473.117,1278210,W Europe
+PRT,Advanced Economies,Faro,NA,Europe,Faro,Portugal,36473.117,64560,W Europe
+PRT,Advanced Economies,Lisboa,Lisbon,Europe,Lisbon,Portugal,36473.117,2719000,W Europe
+ROU,Emerging and Developing Economies,Bucuresti,Bucharest,Europe,Bucharest,Romania,31379.875,1883425,E Europe
+ROU,Emerging and Developing Economies,Cluj-Napoca,NA,Europe,Cluj-Napoca,Romania,31379.875,324576,E Europe
+ROU,Emerging and Developing Economies,Timisoara,NA,Europe,Timisoara,Romania,31379.875,319279,E Europe
+SRB,Emerging and Developing Economies,Novi Sad,NA,Europe,Novi Sad,Serbia,19095.159,380000,E Europe
+SRB,Emerging and Developing Economies,Belgrade,NA,Europe,Belgrade,Serbia,19095.159,1378682,E Europe
+SVK,Advanced Economies,Kosice,NA,Europe,Kosice,Slovak Republic,34351.036,238593,E Europe
+SVK,Advanced Economies,Bratislava,NA,Europe,Bratislava,Slovak Republic,34351.036,475503,E Europe
+SVK,Advanced Economies,Zilina,NA,Europe,Zilina,Slovak Republic,34351.036,108000,E Europe
+SVN,Advanced Economies,Ljubljana,NA,Europe,Ljubljana,Slovenia,41019.237,286745,E Europe
+SVN,Advanced Economies,Celje,NA,Europe,Celje,Slovenia,41019.237,37872,E Europe
+SVN,Advanced Economies,Maribor,NA,Europe,Maribor,Slovenia,41019.237,97019,E Europe
+SWE,Advanced Economies,Stockholm,NA,Europe,Stockholm,Sweden,55667.104,1611776,W Europe
+USA,Advanced Economies,Houston,NA,US/Canada,Houston,United States,65077.295,5650910,English
+USA,Advanced Economies,New York,NA,US/Canada,New York,United States,65077.295,18972871,English
+USA,Advanced Economies,Las Vegas,NA,US/Canada,Las Vegas,United States,65077.295,2150373,English

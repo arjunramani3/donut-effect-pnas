@@ -1,0 +1,119 @@
+iso,imf_classification,old_city_name,new_city_name,continent
+AUS,Advanced Economies,Melbourne,,Australia
+AUS,Advanced Economies,Brisbane,,Australia
+AUS,Advanced Economies,Sydney,,Australia
+AUT,Advanced Economies,Graz,,Europe
+AUT,Advanced Economies,Wien,Vienna,Europe
+AUT,Advanced Economies,Salzburg,,Europe
+BEL,Advanced Economies,Gent,,Europe
+BEL,Advanced Economies,Antwerpen,Antwerp,Europe
+BEL,Advanced Economies,Bruxelles,Brussels,Europe
+BGD,Emerging and Developing Economies,Dhaka,,Europe
+BHR,Emerging and Developing Economies,Manama,,Europe
+BIH,Emerging and Developing Economies,Sarajevo,,Europe
+BLR,Emerging and Developing Economies,Gomel,Homyel,Europe
+BLR,Emerging and Developing Economies,Brest,,Europe
+BLR,Emerging and Developing Economies,Minsk,,Europe
+BRA,Emerging and Developing Economies,Brasaï¿½Lia,Brasilia,Latin America
+CAN,Advanced Economies,Toronto,,US/Canada
+CAN,Advanced Economies,Calgary,,US/Canada
+CAN,Advanced Economies,Edmonton,,US/Canada
+CHE,Advanced Economies,Genave,Geneva,Europe
+CHE,Advanced Economies,Zaerich,Zurich,Europe
+CHE,Advanced Economies,Basel,,Europe
+CHL,Emerging and Developing Economies,Concepcion,,Latin America
+CHL,Emerging and Developing Economies,Santiago,,Latin America
+CHL,Emerging and Developing Economies,Viaï¿½A Del Mar,Vina del Mar,Latin America
+CZE,Advanced Economies,Brno,,Europe
+CZE,Advanced Economies,Ostrava,,Europe
+CZE,Advanced Economies,Praha,Prague,Europe
+DEU,Advanced Economies,Maenchen,Munich,Europe
+DEU,Advanced Economies,Kaï¿½Ln,Cologne,Europe
+DEU,Advanced Economies,Berlin,,Europe
+DNK,Advanced Economies,Kaï¿½Benhavn,Copenhagen,Europe
+DNK,Advanced Economies,Odense,,Europe
+DNK,Advanced Economies,Aarhus,,Europe
+EGY,Emerging and Developing Economies,Alexandria,,Asia
+EGY,Emerging and Developing Economies,Cairo,,Asia
+EGY,Emerging and Developing Economies,Giza,,Asia
+ESP,Advanced Economies,Palma,,Europe
+ESP,Advanced Economies,Barcelona,,Europe
+ESP,Advanced Economies,Madrid,,Europe
+FIN,Advanced Economies,Tampere,,Europe
+FIN,Advanced Economies,Turku,,Europe
+FIN,Advanced Economies,Helsinki,,Europe
+FRA,Advanced Economies,Nice,,Europe
+FRA,Advanced Economies,Lyon,,Europe
+FRA,Advanced Economies,Paris,,Europe
+GBR,Advanced Economies,Manchester,,Europe
+GBR,Advanced Economies,Glasgow,,Europe
+GBR,Advanced Economies,London,,Europe
+GRC,Advanced Economies,Thessaloniki,,Europe
+GRC,Advanced Economies,Rodos,,Europe
+GRC,Advanced Economies,Athina,Athens,Europe
+HRV,Advanced Economies,Zagreb,,Europe
+HRV,Advanced Economies,Split,,Europe
+HRV,Advanced Economies,Rijeka,,Europe
+HUN,Emerging and Developing Economies,Gyaï¿½R,Gyor,Asia
+HUN,Emerging and Developing Economies,Budapest,,Asia
+HUN,Emerging and Developing Economies,Debrecen,,Asia
+IDN,Emerging and Developing Economies,Jakarta,,Asia
+IDN,Emerging and Developing Economies,Badung,,Asia
+IRL,Advanced Economies,Cork,,Europe
+IRL,Advanced Economies,Dublin,,Europe
+IRL,Advanced Economies,Galway,,Europe
+ISL,Advanced Economies,Reykjavaï¿½K,Reykjavik,Europe
+ISR,Advanced Economies,Jerusalem,,Europe
+ISR,Advanced Economies,Haifa,,Europe
+ISR,Advanced Economies,Tel Aviv,Tel Aviv-Yafo,Europe
+ITA,Advanced Economies,Torino,Turin,Europe
+ITA,Advanced Economies,Milano,Milan,Europe
+ITA,Advanced Economies,Roma,Rome,Europe
+KAZ,Emerging and Developing Economies,Karaganda,,Asia
+KEN,Emerging and Developing Economies,Nairobi,,Africa
+LBN,Emerging and Developing Economies,Beirut,,Asia
+LKA,Emerging and Developing Economies,Colombo,,Asia
+LTU,Advanced Economies,Klaipeda,,Europe
+LTU,Advanced Economies,Vilnius,,Europe
+LTU,Advanced Economies,Kaunas,,Europe
+LUX,Advanced Economies,Bertrange,,Europe
+LUX,Advanced Economies,Luxembourg City,Luxembourg,Europe
+MAC,Advanced Economies,Macau,,Asia
+MCO,Advanced Economies,Monaco,,Europe
+MDA,Emerging and Developing Economies,Chisinau,,Europe
+MKD,Emerging and Developing Economies,Skopje,,Europe
+MNE,Emerging and Developing Economies,Podgorica,,Europe
+MYS,Emerging and Developing Economies,Petaling Jaya,,Asia
+MYS,Emerging and Developing Economies,Kuala Lumpur,,Asia
+MYS,Emerging and Developing Economies,Johor Bahru,,Asia
+NLD,Advanced Economies,Rotterdam,,Europe
+NLD,Advanced Economies,'S-Gravenhage,,Europe
+NLD,Advanced Economies,Amsterdam,,Europe
+NOR,Advanced Economies,Stavanger,,Europe
+NOR,Advanced Economies,Trondheim,,Europe
+NOR,Advanced Economies,Oslo,,Europe
+NZL,Advanced Economies,Wellington,,Europe
+NZL,Advanced Economies,Christchurch,,Europe
+NZL,Advanced Economies,Auckland,,Europe
+PER,Emerging and Developing Economies,Lima,,Latin America
+POL,Emerging and Developing Economies,Wroclaw,,Europe
+POL,Emerging and Developing Economies,Warszawa,Warsaw,Europe
+POL,Emerging and Developing Economies,Krakaï¿½W,Krakow,Europe
+PRT,Advanced Economies,Porto,,Europe
+PRT,Advanced Economies,Faro,,Europe
+PRT,Advanced Economies,Lisboa,Lisbon,Europe
+ROU,Emerging and Developing Economies,Bucuresti,Bucharest,Europe
+ROU,Emerging and Developing Economies,Cluj-Napoca,,Europe
+ROU,Emerging and Developing Economies,Timisoara,,Europe
+SRB,Emerging and Developing Economies,Novi Sad,,Europe
+SRB,Emerging and Developing Economies,Belgrade,,Europe
+SVK,Advanced Economies,Kosice,,Europe
+SVK,Advanced Economies,Bratislava,,Europe
+SVK,Advanced Economies,Zilina,,Europe
+SVN,Advanced Economies,Ljubljana,,Europe
+SVN,Advanced Economies,Celje,,Europe
+SVN,Advanced Economies,Maribor,,Europe
+SWE,Advanced Economies,Stockholm,,Europe
+USA,Advanced Economies,Houston,,US/Canada
+USA,Advanced Economies,New York,,US/Canada
+USA,Advanced Economies,Las Vegas,,US/Canada

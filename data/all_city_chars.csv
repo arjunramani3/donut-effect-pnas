@@ -1,0 +1,246 @@
+city,iso,country,country2,gdp_capita,top_city,continent,new_city,population2,cbsa_code,gdp_capita_usa,population,final_sample
+Canberra,AUS,Australia,Australia,52613.85,1,Asia,Canberra,381488,NA,NA,381488,0
+Melbourne,AUS,Australia,Australia,52613.85,0,Asia,Melbourne,4529500,NA,NA,4529500,1
+Sydney,AUS,Australia,Australia,52613.85,NA,English,Sydney,4840600,NA,NA,4840600,1
+Graz,AUT,Austria,Austria,58662.928,NA,English,Graz,289440,NA,NA,289440,0
+Vienna,AUT,Austria,Austria,58662.928,1,English,Vienna,1973403,NA,NA,1973403,1
+Wien,AUT,Austria,Austria,58662.928,NA,E_Europe,Vienna,1973403,NA,NA,1973403,1
+Dhaka,BGD,Bangladesh,Bangladesh,6062.01,1,E_Europe,Dhaka,18627000,NA,NA,18627000,1
+Antwerpen,BEL,Belgium,Belgium,54533.592,NA,E_Europe,Antwerp,529247,NA,NA,529247,1
+Bruxelles,BEL,Belgium,Belgium,54533.592,NA,W_Europe,Brussels,1743000,NA,NA,1743000,1
+Brussels,BEL,Belgium,Belgium,54533.592,NA,W_Europe,Brussels,1743000,NA,NA,1743000,1
+Brampton,CAN,Canada,Canada,51667.525,1,W_Europe,Brampton,593638,NA,NA,593638,1
+Burnaby,CAN,Canada,Canada,51667.525,1,Asia,Burnaby,232755,NA,NA,232755,0
+Calgary,CAN,Canada,Canada,51667.525,NA,English,Calgary,1239220,NA,NA,1239220,1
+Edmonton,CAN,Canada,Canada,51667.525,NA,English,Edmonton,1062643,NA,NA,1062643,1
+Laval,CAN,Canada,Canada,51667.525,NA,English,Laval,422993,NA,NA,422993,0
+Mississauga,CAN,Canada,Canada,51667.525,NA,English,Mississauga,721599,NA,NA,721599,1
+Montreal,CAN,Canada,Canada,51667.525,NA,English,Montreal,3519595,NA,NA,3519595,1
+Ottawa,CAN,Canada,Canada,51667.525,NA,English,Ottawa,989567,NA,NA,989567,1
+Quebec,CAN,Canada,Canada,51667.525,NA,English,Quebec City,705103,NA,NA,705103,1
+Saskatoon,CAN,Canada,Canada,51667.525,NA,English,Saskatoon,246376,NA,NA,246376,0
+Surrey,CAN,Canada,Canada,51667.525,NA,English,Surrey,517887,NA,NA,517887,1
+Toronto,CAN,Canada,Canada,51667.525,NA,English,Toronto,5429524,NA,NA,5429524,1
+Vancouver,CAN,Canada,Canada,51667.525,NA,English,Vancouver,2264823,NA,NA,2264823,1
+Victoria,CAN,Canada,Canada,51667.525,1,English,Victoria,335696,NA,NA,335696,0
+Bogota,COL,Colombia,Colombia,15635.986,NA,English,Bogota,7968095,NA,NA,7968095,1
+San Jose,CRI,Costa Rica,Costa Rica,21131.251,NA,English,San Jose,1543000,NA,NA,1543000,1
+Brno,CZE,Czechia,Czech Republic,42980.561,NA,W_Europe,Brno,382405,NA,NA,382405,0
+Praha,CZE,Czechia,Czech Republic,42980.561,NA,W_Europe,Prague,1335084,NA,NA,1335084,1
+Prague,CZE,Czechia,Czech Republic,42980.561,1,W_Europe,Prague,1335084,NA,NA,1335084,1
+Copenhagen,DNK,Denmark,Denmark,59480.223,1,ROW,Copenhagen,1366301,NA,NA,1366301,1
+Santo Domingo,DOM,Dominican Republic,Dominican Republic,19900.089,1,ROW,Santo Domingo,2581827,NA,NA,2581827,1
+Tallinn,EST,Estonia,Estonia,37777.147,NA,E_Europe,Tallinn,438341,NA,NA,438341,0
+Espoo,FIN,Finland,Finland,50686.883,1,E_Europe,Espoo,297132,NA,NA,297132,0
+Helsinki,FIN,Finland,Finland,50686.883,1,W_Europe,Helsinki,1268296,NA,NA,1268296,1
+Vantaa,FIN,Finland,Finland,50686.883,NA,W_Europe,Vantaa,214605,NA,NA,214605,0
+Paris,FRA,France,France,49792.704,NA,W_Europe,Paris,11060000,NA,NA,11060000,1
+Berlin,DEU,Germany,Germany,56479.067,NA,W_Europe,Berlin,4473101,NA,NA,4473101,1
+Frankfurt,DEU,Germany,Germany,56479.067,NA,W_Europe,Frankfurt,764104,NA,NA,764104,1
+Hamburg,DEU,Germany,Germany,56479.067,1,W_Europe,Hamburg,2484800,NA,NA,2484800,1
+Munchen,DEU,Germany,Germany,56479.067,NA,W_Europe,Munich,2606021,NA,NA,2606021,1
+Athina,GRC,Greece,Greece,30918.255,1,W_Europe,Athens,3041131,NA,NA,3041131,1
+Athens,GRC,Greece,Greece,30918.255,1,E_Europe,Athens,3041131,NA,NA,3041131,1
+Hong Kong,HKG,Hong Kong,Hong Kong SAR,62015.21,NA,E_Europe,Hong Kong,7450000,NA,NA,7450000,1
+Budapest,HUN,Hungary,Hungary,34445.296,NA,W_Europe,Budapest,2997958,NA,NA,2997958,1
+Reykjavik,ISL,Iceland,Iceland,60075.946,1,W_Europe,Reykjavik,135688,NA,NA,135688,0
+Jakarta,IDN,Indonesia,Indonesia,12484.361,NA,W_Europe,Jakarta,33756000,NA,NA,33756000,1
+Dublin,IRL,Ireland,Ireland,90719.122,1,W_Europe,Dublin,1173179,NA,NA,1173179,1
+Jerusalem,ISR,Israel,Israel,42985.531,NA,English,Jerusalem,919438,NA,NA,919438,1
+Bologna,ITA,Italy,Italy,44704.061,NA,English,Bologna,392564,NA,NA,392564,0
+Napoli,ITA,Italy,Italy,44704.061,NA,English,Naples,966144,NA,NA,966144,1
+Palermo,ITA,Italy,Italy,44704.061,NA,English,Palermo,668405,NA,NA,668405,1
+Roma,ITA,Italy,Italy,44704.061,1,English,Rome,2872800,NA,NA,2872800,1
+Rome,ITA,Italy,Italy,44704.061,NA,English,Rome,2872800,NA,NA,2872800,1
+Torino,ITA,Italy,Italy,44704.061,NA,English,Turin,870952,NA,NA,870952,1
+Venezia,ITA,Italy,Italy,44704.061,NA,English,Venice,261321,NA,NA,261321,0
+Riga,LVA,Latvia,Latvia,32266.778,NA,English,Riga,920643,NA,NA,920643,1
+Vilnius,LTU,Lithuania,Lithuania,38835.71,NA,English,Vilnius,708203,NA,NA,708203,1
+Kuala Lumpur,MYS,Malaysia,Malaysia,29097.34,NA,E_Europe,Kuala Lumpur,8911000,NA,NA,8911000,1
+Ciudad De Mexico,MEX,Mexico,Mexico,20768.104,1,E_Europe,Mexico City,21804000,NA,NA,21804000,1
+Amsterdam,NLD,Netherlands,Netherlands,59686.618,1,E_Europe,Amsterdam,1459402,NA,NA,1459402,1
+Breda,NLD,Netherlands,Netherlands,59686.618,1,Asia,Breda,184126,NA,NA,184126,0
+Eindhoven,NLD,Netherlands,Netherlands,59686.618,1,W_Europe,Eindhoven,235691,NA,NA,235691,0
+Groningen,NLD,Netherlands,Netherlands,59686.618,1,W_Europe,Groningen,233273,NA,NA,233273,0
+Rotterdam,NLD,Netherlands,Netherlands,59686.618,1,Asia,Rotterdam,631155,NA,NA,631155,1
+Utrecht,NLD,Netherlands,Netherlands,59686.618,NA,W_Europe,Utrecht,359370,NA,NA,359370,0
+Auckland,NZL,New Zealand,New Zealand,43957.557,NA,W_Europe,Auckland,1346091,NA,NA,1346091,1
+Wellington,NZL,New Zealand,New Zealand,43957.557,NA,W_Europe,Wellington,418500,NA,NA,418500,0
+Oslo,NOR,Norway,Norway,66641.423,NA,W_Europe,Oslo,1064235,NA,NA,1064235,1
+Lima,PER,Peru,Peru,13432.869,NA,W_Europe,Lima,10320000,NA,NA,10320000,1
+Manila,PHL,Philippines,Philippines,9364.387,NA,W_Europe,Manila,24922000,NA,NA,24922000,1
+Gdansk,POL,Poland,Poland,34669.21,NA,W_Europe,Gdansk,486022,NA,NA,486022,0
+Krakow,POL,Poland,Poland,34669.21,1,W_Europe,Krakow,800653,NA,NA,800653,1
+Lodz,POL,Poland,Poland,34669.21,NA,W_Europe,Lodz,690422,NA,NA,690422,1
+Poznan,POL,Poland,Poland,34669.21,NA,W_Europe,Poznan,546859,NA,NA,546859,1
+Szczecin,POL,Poland,Poland,34669.21,1,E_Europe,Szczecin,403833,NA,NA,403833,0
+Warszawa,POL,Poland,Poland,34669.21,1,W_Europe,Warsaw,1860281,NA,NA,1860281,1
+Wroclaw,POL,Poland,Poland,34669.21,1,E_Europe,Wroclaw,672929,NA,NA,672929,1
+Warsaw,POL,Poland,Poland,34669.21,1,ROW,Warsaw,1860281,NA,NA,1860281,1
+Lisbon,PRT,Portugal,Portugal,36473.117,1,Asia,Lisbon,2719000,NA,NA,2719000,1
+Singapore,SGP,Singapore,Singapore,102630.741,NA,W_Europe,Singapore,5983000,NA,NA,5983000,1
+Bratislava,SVK,Slovakia,Slovak Republic,34351.036,1,W_Europe,Bratislava,475503,NA,NA,475503,0
+Ljubljana,SVN,Slovenia,Slovenia,41019.237,NA,W_Europe,Ljubljana,286745,NA,NA,286745,0
+Cape Town,ZAF,South Africa,South Africa,14270.657,NA,W_Europe,Cape Town,433688,NA,NA,433688,0
+Barcelona,ESP,Spain,Spain,42587.263,NA,W_Europe,Barcelona,4800000,NA,NA,4800000,1
+Madrid,ESP,Spain,Spain,42587.263,NA,W_Europe,Madrid,6211000,NA,NA,6211000,1
+Malmo,SWE,Sweden,Sweden,55667.104,1,W_Europe,Malmo,351749,NA,NA,351749,0
+Stockholm,SWE,Sweden,Sweden,55667.104,1,English,Stockholm,1611776,NA,NA,1611776,1
+Uppsala,SWE,Sweden,Sweden,55667.104,NA,English,Uppsala,166698,NA,NA,166698,0
+Bern,CHE,Switzerland,Switzerland,73656.336,1,ROW,Bern,133883,NA,NA,133883,0
+Geneve,CHE,Switzerland,Switzerland,73656.336,1,Asia,Geneva,201818,NA,NA,201818,0
+Zurich,CHE,Switzerland,Switzerland,73656.336,NA,E_Europe,Zurich,436332,NA,NA,436332,0
+Bangkok,THA,Thailand,Thailand,19213.636,NA,E_Europe,Bangkok,18007000,NA,NA,18007000,1
+Dubai,ARE,United Arab Emirates,United Arab Emirates,72526.706,NA,E_Europe,Dubai,3331420,NA,NA,3331420,1
+Sharjah,ARE,United Arab Emirates,United Arab Emirates,72526.706,NA,E_Europe,Sharjah,1247749,NA,NA,1247749,1
+Belfast,GBR,United Kingdom,United Kingdom,49291.814,NA,E_Europe,Belfast,333871,NA,NA,333871,0
+Birmingham,GBR,United Kingdom,United Kingdom,49291.814,NA,E_Europe,Birmingham,2919600,NA,NA,2919600,1
+Edinburgh,GBR,United Kingdom,United Kingdom,49291.814,1,E_Europe,Edinburgh,488050,NA,NA,488050,0
+Glasgow,GBR,United Kingdom,United Kingdom,49291.814,1,W_Europe,Glasgow,626410,NA,NA,626410,1
+Leeds,GBR,United Kingdom,United Kingdom,49291.814,1,E_Europe,Leeds,789194,NA,NA,789194,1
+Leicester,GBR,United Kingdom,United Kingdom,49291.814,1,Asia,Leicester,508916,NA,NA,508916,1
+London,GBR,United Kingdom,United Kingdom,49291.814,1,E_Europe,London,11262000,NA,NA,11262000,1
+Manchester,GBR,United Kingdom,United Kingdom,49291.814,NA,E_Europe,Manchester,2705000,NA,NA,2705000,1
+Nottingham,GBR,United Kingdom,United Kingdom,49291.814,NA,W_Europe,Nottingham,768638,NA,NA,768638,1
+Sheffield,GBR,United Kingdom,United Kingdom,49291.814,NA,W_Europe,Sheffield,518090,NA,NA,518090,1
+Southampton,GBR,United Kingdom,United Kingdom,49291.814,NA,W_Europe,Southampton,855569,NA,NA,855569,1
+Stoke-On-Trent,GBR,United Kingdom,United Kingdom,49291.814,NA,W_Europe,Fenton,12070,NA,NA,12070,0
+York,GBR,United Kingdom,United Kingdom,49291.814,1,Asia,York,181131,NA,NA,181131,0
+Albany,USA,United States of America,United States,71640.42627217546,NA,English,Albany,604077,10580,71640.42627217546,880736,1
+Albuquerque,USA,United States of America,United States,56742.75794974049,NA,English,Albuquerque,765693,10740,56742.75794974049,912108,1
+Alexandria,USA,United States of America,United States,95148.60353282702,NA,English,Alexandria,158185,47900,95148.60353282702,6196585,1
+Anaheim,USA,United States of America,United States,68510.19916370993,NA,English,Anaheim,348204,31080,68510.19916370993,13249614,1
+Arlington,USA,United States of America,United States,95148.60353282702,NA,English,Arlington,392304,47900,95148.60353282702,6196585,1
+Athens,USA,United States of America,United States,52748.42792833475,NA,English,Athens,142277,12020,52748.42792833475,208457,0
+Auburn,USA,United States of America,United States,53143.282901797495,NA,English,Auburn,91047,12220,53143.282901797495,161152,0
+Augusta,USA,United States of America,United States,52397.44572970119,NA,English,Augusta,409668,12260,52397.44572970119,599616,1
+Aurora,USA,United States of America,United States,80092.61171861713,NA,English,Aurora,383496,19740,80092.61171861713,2892066,1
+Austin,USA,United States of America,United States,75970.47839662198,NA,English,Austin,1659251,12420,75970.47839662198,2114441,1
+Atlanta,USA,United States of America,United States,NA,NA,English,Atlanta,5046555,NA,NA,5046555,1
+Bakersfield,USA,United States of America,United States,44494.62372459901,NA,English,Bakersfield,590845,12540,44494.62372459901,887641,1
+Baltimore,USA,United States of America,United States,79094.98296924024,NA,English,Baltimore,2205092,12580,79094.98296924024,2796733,1
+Baton Rouge,USA,United States of America,United States,59289.28640178283,NA,English,Baton Rouge,610751,12940,59289.28640178283,854318,1
+Birmingham,USA,United States of America,United States,60998.417108172296,NA,English,Birmingham,704676,13820,60998.417108172296,1085330,1
+Bloomington,USA,United States of America,United States,53604.90079347858,NA,English,Bloomington,134357,14020,53604.90079347858,167296,0
+Boston,USA,United States of America,United States,90805.19882473681,NA,English,Boston,4208580,14460,90805.19882473681,4832346,1
+Bronx,USA,United States of America,United States,82803.18619828166,NA,English,Bronx,1472654,35620,82803.18619828166,19294236,1
+Brooklyn,USA,United States of America,United States,82803.18619828166,NA,English,Brooklyn,2736074,35620,82803.18619828166,19294236,1
+Buffalo,USA,United States of America,United States,63153.90561065009,NA,English,Buffalo,1004655,15380,63153.90561065009,1130175,1
+Burlington,USA,United States of America,United States,71184.53091634167,NA,English,Burlington,137096,15540,71184.53091634167,218784,0
+Chandler,USA,United States of America,United States,62036.10360848019,NA,English,Chandler,272439,38060,62036.10360848019,4761603,1
+Charleston,USA,United States of America,United States,66783.90084977861,NA,English,Charleston,685517,16700,66783.90084977861,774508,1
+Charlotte,USA,United States of America,United States,65919.7979368384,NA,English,Charlotte,1516107,16740,65919.7979368384,2545560,1
+Chicago,USA,United States of America,United States,72784.9334416327,NA,English,Chicago,8595181,16980,72784.9334416327,9508605,1
+Cincinnati,USA,United States of America,United States,65952.22563997302,NA,English,Cincinnati,1712287,17140,65952.22563997302,2201741,1
+Clarksville,USA,United States of America,United States,49463.69235199249,NA,English,Clarksville,198689,17300,49463.69235199249,299470,0
+Cleveland,USA,United States of America,United States,64445.29120018767,NA,English,Cleveland,1683059,17460,64445.29120018767,2056898,1
+Colorado Springs,USA,United States of America,United States,64464.366319678615,NA,English,Colorado Springs,628808,17820,64464.366319678615,723498,1
+Columbia,USA,United States of America,United States,57023.16220625751,NA,English,Columbia,640502,17900,57023.16220625751,824278,1
+Columbus,USA,United States of America,United States,65696.61903879425,NA,English,Columbus,1556848,18140,65696.61903879425,2077761,1
+Concord,USA,United States of America,United States,90805.19882473681,NA,English,Concord,640270,14460,90805.19882473681,4832346,1
+Corpus Christi,USA,United States of America,United States,52410.798313344865,NA,English,Corpus Christi,333764,18580,52410.798313344865,428548,0
+Dallas,USA,United States of America,United States,67293.20654018708,NA,English,Dallas,5668165,19100,67293.20654018708,7320663,1
+Dayton,USA,United States of America,United States,NA,NA,English,Dayton,709300,NA,NA,709300,1
+Decatur,USA,United States of America,United States,67327.5417552708,NA,English,Decatur,88002,12060,67327.5417552708,5862424,1
+Detroit,USA,United States of America,United States,65004.19220127261,NA,English,Detroit,3522856,19820,65004.19220127261,4317848,1
+Durham,USA,United States of America,United States,69284.64901504265,NA,English,Durham,399762,20500,69284.64901504265,626695,1
+El Paso,USA,United States of America,United States,41286.188626220566,NA,English,El Paso,794344,21340,41286.188626220566,840477,1
+Everett,USA,United States of America,United States,87268.67167111397,NA,English,Everett,110438,42660,87268.67167111397,3871323,1
+Fayetteville,USA,United States of America,United States,46215.19950268305,NA,English,Fayetteville,381636,22180,46215.19950268305,519101,1
+Florence,USA,United States of America,United States,47909.07011347976,NA,English,Florence,88709,22500,47909.07011347976,205502,0
+Fort Lauderdale,USA,United States of America,United States,62036.10360848019,NA,English,Fort Lauderdale,182247,33100,62036.10360848019,6090660,1
+Fort Myers,USA,United States of America,United States,63983.673308506586,NA,English,Fort Myers,84694,15980,63983.673308506586,737468,1
+Fort Wayne,USA,United States of America,United States,56048.423600269765,NA,English,Fort Wayne,330305,23060,56048.423600269765,406305,0
+Fort Worth,USA,United States of America,United States,67293.20654018708,NA,English,Fort Worth,908469,19100,67293.20654018708,7320663,1
+Franklin,USA,United States of America,United States,67676.61644195525,NA,English,Franklin,81531,34980,67676.61644195525,1871903,1
+Fresno,USA,United States of America,United States,46585.25682080755,NA,English,Fresno,719558,23420,46585.25682080755,984521,1
+Frisco,USA,United States of America,United States,67293.20654018708,NA,English,Frisco,193140,19100,67293.20654018708,7320663,1
+Gainesville,USA,United States of America,United States,52212.41707063895,NA,English,Gainesville,213287,23540,52212.41707063895,323799,0
+Glendale,USA,United States of America,United States,68510.19916370993,NA,English,Glendale,245685,31080,68510.19916370993,13249614,1
+Grand Rapids,USA,United States of America,United States,59872.98505820602,NA,English,Grand Rapids,604311,24340,59872.98505820602,1062392,1
+Greensboro,USA,United States of America,United States,54911.546478608914,NA,English,Greensboro,345270,24660,54911.546478608914,762063,1
+Greenville,USA,United States of America,United States,57047.95986159575,NA,English,Greenville,450487,24860,57047.95986159575,895942,1
+Henderson,USA,United States of America,United States,58568.246885024775,NA,English,Henderson,311250,29820,58568.246885024775,2182004,1
+Hialeah,USA,United States of America,United States,62036.10360848019,NA,English,Hialeah,224362,33100,62036.10360848019,6090660,1
+Honolulu,USA,United States of America,United States,70226.95991789579,NA,English,Honolulu,835291,46520,70226.95991789579,984821,1
+Houston,USA,United States of America,United States,65618.41104888133,NA,English,Houston,5650910,26420,65618.41104888133,6884138,1
+Huntsville,USA,United States of America,United States,66606.50223851274,NA,English,Huntsville,339136,26620,66606.50223851274,457003,0
+Indianapolis,USA,United States of America,United States,64281.24517256546,NA,English,Indianapolis,1659305,26900,64281.24517256546,2029472,1
+Irving,USA,United States of America,United States,67293.20654018708,NA,English,Irving,254184,19100,67293.20654018708,7320663,1
+Jackson,USA,United States of America,United States,52622.53213969445,NA,English,Jackson,326977,27140,52622.53213969445,597727,1
+Jacksonville,USA,United States of America,United States,63527.77795267278,NA,English,Jacksonville,1220191,27260,63527.77795267278,1503574,1
+Kansas City,USA,United States of America,United States,68214.53481160014,NA,English,Kansas City,1644497,28140,68214.53481160014,2124518,1
+Katy,USA,United States of America,United States,65618.41104888133,NA,English,Katy,21926,26420,65618.41104888133,6884138,1
+Kissimmee,USA,United States of America,United States,56986.9194792247,NA,English,Kissimmee,399929,36740,56986.9194792247,2508970,1
+Knoxville,USA,United States of America,United States,59399.92209483036,NA,English,Knoxville,619925,28940,59399.92209483036,853337,1
+Lafayette,USA,United States of America,United States,53324.49653696156,NA,English,Lafayette,254286,29180,53324.49653696156,489914,0
+Lakewood,USA,United States of America,United States,80092.61171861713,NA,English,Lakewood,155608,19740,80092.61171861713,2892066,1
+Lancaster,USA,United States of America,United States,61410.43968917691,NA,English,Lancaster,430621,29540,61410.43968917691,540999,1
+Las Vegas,USA,United States of America,United States,58568.246885024775,NA,English,Las Vegas,2150373,29820,58568.246885024775,2182004,1
+Lebanon,USA,United States of America,United States,55565.823077148634,NA,English,Lebanon,80620,30140,55565.823077148634,139729,0
+Lexington,USA,United States of America,United States,63239.74364835938,NA,English,Lexington,321354,30460,63239.74364835938,510647,1
+Lincoln,USA,United States of America,United States,NA,NA,English,Lincoln,289136,NA,NA,289136,0
+Little Rock,USA,United States of America,United States,58367.95813036976,NA,English,Little Rock,457379,30780,58367.95813036976,737015,1
+Long Beach,USA,United States of America,United States,68510.19916370993,NA,English,Long Beach,466565,31080,68510.19916370993,13249614,1
+Los Angeles,USA,United States of America,United States,68510.19916370993,NA,English,Los Angeles,12121244,31080,68510.19916370993,13249614,1
+Louisville,USA,United States of America,United States,62242.11489898249,NA,English,Louisville,1022630,31140,62242.11489898249,1257088,1
+Madison,USA,United States of America,United States,75316.20179808227,NA,English,Madison,461778,31540,75316.20179808227,653725,1
+Manchester,USA,United States of America,United States,78122.15187520158,NA,English,Manchester,167568,31700,78122.15187520158,413035,0
+Marietta,USA,United States of America,United States,67327.5417552708,NA,English,Marietta,60962,12060,67327.5417552708,5862424,1
+Memphis,USA,United States of America,United States,56181.94943670645,NA,English,Memphis,1034498,32820,56181.94943670645,1339623,1
+Mesa,USA,United States of America,United States,62036.10360848019,NA,English,Mesa,497752,38060,62036.10360848019,4761603,1
+Miami,USA,United States of America,United States,62036.10360848019,NA,English,Miami,5711945,33100,62036.10360848019,6090660,1
+Middletown,USA,United States of America,United States,78940.47450136351,NA,English,Middletown,95296,25540,78940.47450136351,1207677,1
+Milford,USA,United States of America,United States,72502.62167316658,NA,English,Milford,30134,35300,72502.62167316658,857513,1
+Milwaukee,USA,United States of America,United States,67699.5065853444,NA,English,Milwaukee,1340981,33340,67699.5065853444,1575223,1
+Minneapolis,USA,United States of America,United States,78597.12235052633,NA,English,Minneapolis,2856952,33460,78597.12235052633,3573609,1
+Monroe,USA,United States of America,United States,44990.576831363804,NA,English,Monroe,117197,33740,44990.576831363804,203457,0
+Mount Pleasant,USA,United States of America,United States,66783.90084977861,NA,English,Mount Pleasant,88900,16700,66783.90084977861,774508,1
+Myrtle Beach,USA,United States of America,United States,56565.35933847462,NA,English,Myrtle Beach,281180,34820,56565.35933847462,463987,0
+Naples,USA,United States of America,United States,86919.59698442952,NA,English,Naples,19187,34940,86919.59698442952,371453,0
+Nashville,USA,United States of America,United States,67676.61644195525,NA,English,Nashville,1098486,34980,67676.61644195525,1871903,1
+New Orleans,USA,United States of America,United States,59270.21128229188,NA,English,New Orleans,925443,35380,59270.21128229188,1267777,1
+New York,USA,United States of America,United States,82803.18619828166,1,English,New York,18972871,35620,82803.18619828166,19294236,1
+Newark,USA,United States of America,United States,82803.18619828166,NA,English,Newark,306247,35620,82803.18619828166,19294236,1
+Oakland,USA,United States of America,United States,105393.85021141834,NA,English,Oakland,437548,41860,105393.85021141834,4701332,1
+Oklahoma City,USA,United States of America,United States,59707.03151863472,NA,English,Oklahoma City,994284,36420,59707.03151863472,1382841,1
+Omaha,USA,United States of America,United States,66429.10362724686,NA,English,Omaha,806485,36540,66429.10362724686,931779,1
+Ontario,USA,United States of America,United States,51508.54516142274,NA,English,Ontario,175223,40140,51508.54516142274,4560470,1
+Orlando,USA,United States of America,United States,56986.9194792247,NA,English,Orlando,1927699,36740,56986.9194792247,2508970,1
+Pasadena,USA,United States of America,United States,68510.19916370993,NA,English,Pasadena,151964,31080,68510.19916370993,13249614,1
+Pensacola,USA,United States of America,United States,55956.86302671319,NA,English,Pensacola,360711,37860,55956.86302671319,488246,0
+Peoria,USA,United States of America,United States,62137.20174178224,NA,English,Peoria,255718,37900,62137.20174178224,406883,0
+Philadelphia,USA,United States of America,United States,74566.54960208779,NA,English,Philadelphia,5512873,37980,74566.54960208779,6079130,1
+Phoenix,USA,United States of America,United States,62036.10360848019,NA,English,Phoenix,4047095,38060,62036.10360848019,4761603,1
+Pittsburgh,USA,United States of America,United States,69067.19265284578,NA,English,Pittsburgh,1720279,38300,69067.19265284578,2331447,1
+Plano,USA,United States of America,United States,67293.20654018708,NA,English,Plano,282181,19100,67293.20654018708,7320663,1
+Portland,USA,United States of America,United States,73523.14056593261,NA,English,Portland,2036875,38900,73523.14056593261,2445761,1
+Raleigh,USA,United States of America,United States,73191.23348679,NA,English,Raleigh,1062018,39580,73191.23348679,1332311,1
+Riverside,USA,United States of America,United States,51508.54516142274,NA,English,Riverside,2022285,40140,51508.54516142274,4560470,1
+Rochester,USA,United States of America,United States,63306.506566577715,NA,English,Rochester,737309,40380,63306.506566577715,1072877,1
+Roseville,USA,United States of America,United States,67836.84744567926,NA,English,Roseville,145687,40900,67836.84744567926,2315980,1
+Sacramento,USA,United States of America,United States,67836.84744567926,NA,English,Sacramento,1924167,40900,67836.84744567926,2315980,1
+Saint Louis,USA,United States of America,United States,NA,NA,English,St. Louis,2092481,NA,NA,2092481,1
+Saint Paul,USA,United States of America,United States,NA,NA,English,St. Paul,309751,NA,NA,309751,0
+Saint Petersburg,USA,United States of America,United States,NA,NA,English,St. Petersburg,258245,NA,NA,258245,0
+Salem,USA,United States of America,United States,90805.19882473681,NA,English,Salem,268634,14460,90805.19882473681,4832346,1
+Salt Lake City,USA,United States of America,United States,62621.709776852476,NA,English,Salt Lake City,1135344,41620,62621.709776852476,1201043,1
+San Diego,USA,United States of America,United States,72624.7024379087,NA,English,San Diego,3084174,41740,72624.7024379087,3316073,1
+San Francisco,USA,United States of America,United States,105393.85021141834,NA,English,San Francisco,3290197,41860,105393.85021141834,4701332,1
+San Jose,USA,United States of America,United States,105956.56623640149,NA,English,San Jose,1729879,41940,105956.56623640149,1987846,1
+Sarasota,USA,United States of America,United States,71772.04459666305,NA,English,Sarasota,727388,35840,71772.04459666305,803709,1
+Scottsdale,USA,United States of America,United States,62036.10360848019,NA,English,Scottsdale,238685,38060,62036.10360848019,4761603,1
+Seattle,USA,United States of America,United States,87268.67167111397,NA,English,Seattle,3438221,42660,87268.67167111397,3871323,1
+Spokane,USA,United States of America,United States,58753.27554408703,NA,English,Spokane,440270,44060,58753.27554408703,550160,1
+Spring,USA,United States of America,United States,NA,NA,English,Spring,62569,NA,NA,62569,0
+Springfield,USA,United States of America,United States,67913.14792364308,NA,English,Springfield,620494,44100,67913.14792364308,209167,0
+Tacoma,USA,United States of America,United States,87268.67167111397,NA,English,Tacoma,217332,42660,87268.67167111397,3871323,1
+Tampa,USA,United States of America,United States,61566.85566900272,NA,English,Tampa,2683956,45300,61566.85566900272,3097859,1
+Troy,USA,United States of America,United States,65004.19220127261,NA,English,Troy,86912,19820,65004.19220127261,4317848,1
+Tucson,USA,United States of America,United States,56666.457471776674,NA,English,Tucson,875284,46060,56666.457471776674,1027207,1
+Tulsa,USA,United States of America,United States,58432.813536639005,NA,English,Tulsa,715983,46140,58432.813536639005,990544,1
+Tyler,USA,United States of America,United States,54331.66284608392,NA,English,Tyler,143895,46340,54331.66284608392,227449,0
+Virginia Beach,USA,United States of America,United States,NA,NA,English,Virginia Beach,1500764,NA,NA,1500764,1
+Washington,USA,United States of America,United States,NA,NA,English,Washington,4810669,NA,NA,4810669,1
+West Palm Beach,USA,United States of America,United States,62036.10360848019,NA,English,West Palm Beach,115877,33100,62036.10360848019,6090660,1
+Wichita,USA,United States of America,United States,56107.55647069173,NA,English,Wichita,491916,48620,56107.55647069173,637690,1

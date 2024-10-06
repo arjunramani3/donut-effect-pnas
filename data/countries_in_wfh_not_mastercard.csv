@@ -1,0 +1,36 @@
+iso,n,country,wfh_days
+AUS,690,Australia,1.27
+AUT,690,Austria,0.83
+BRA,690,Brazil,0.91
+CAN,690,Canada,1.67
+CHL,690,Chile,0.97
+CZE,690,Czech Rep.,0.69
+DEU,690,Germany,1.04
+DNK,690,Denmark,0.64
+ESP,690,Spain,0.88
+FIN,690,Finland,0.97
+FRA,690,France,0.56
+GBR,690,UK,1.53
+GRC,690,Greece,0.52
+HUN,690,Hungary,0.77
+ISR,690,Israel,0.69
+ITA,690,Italy,0.72
+MYS,690,Malaysia,0.6
+NLD,690,Netherlands,1.03
+NOR,690,Norway,0.72
+NZL,690,New Zealand,1.01
+POL,690,Poland,0.74
+PRT,690,Portugal,0.75
+ROU,690,Romania,0.77
+SWE,690,Sweden,0.9
+USA,690,USA,1.35
+ARG,NA,Argentina,0.87
+NA,NA,Average,0.8451612903225806
+CHN,NA,China,0.8
+JPN,NA,Japan,0.54
+MEX,NA,Mexico,0.82
+SGP,NA,Singapore,0.91
+ZAF,NA,South Africa,0.91
+KOR,NA,South Korea,0.42
+TWN,NA,Taiwan,0.66
+TUR,NA,Türkiye,0.71

@@ -8,7 +8,9 @@ data/USPS_zips.csv
 data/external_data/mastercard/*
 data/external_data/USPS_gsb/*
 data/external_data/USPS_online/*
-data/*
+data/exernal_data/nhgis/*
+data/external_data/inrix.xslx
+data/external_data/TRACT_ZIP_092020.csv
 
 ###figures and tables
 figures-tables/cities/*

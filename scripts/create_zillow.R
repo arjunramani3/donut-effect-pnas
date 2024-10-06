@@ -1,0 +1,218 @@
+###########################################
+# create_zillow.R
+# This script reads in data from Zillow, USPS, and Census and creates
+# panel data to be read in for for analysis
+###########################################
+
+## Preliminaries
+rm(list=ls())
+
+## This function will check if a package is installed, and if not, install it
+pkgTest <- function(x) {
+  if (!require(x, character.only = TRUE))
+  {
+    install.packages(x, dep = TRUE);
+    if(!require(x, character.only = TRUE)) stop("Package not found")
+  }
+}
+
+## These lines load the required packages
+packages <- c("tidyverse", "zoo")
+lapply(packages, pkgTest);
+
+## Define top twelve metro areas (short forms)
+cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
+            'Los Angeles, CA', 'Washington, DC', 'Atlanta, GA', 'Miami, FL',
+            'Philadelphia, PA', 'Dallas, TX', 'Houston, TX', 'Phoenix, AZ')
+
+#set to your working directory
+setwd('~/Documents/donut-effect-pnas/')
+
+## Define end date of analysis
+dif_pre_period = 12 #number of months for pre-trend (cap at 24m because of limitd historical data)
+dif_period = 36 #number of months to calculate difs
+start_date = '2023-02-01'
+end_date = '2023-03-01'
+
+## Read in Zillow Home Value Index data
+df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_month.csv?t=1631634893', col_types = cols(RegionName = col_double()))
+
+## Read in zipcode level characteristics
+chars <- read_csv('./data/zip_all_chars_cbd.csv')
+
+## Tidy zillow data from wide to long
+df2 <- df %>% rename(zip = 'RegionName', MsaShort = 'Metro') %>%
+  mutate(MetroShort = sub("-.*", "", MsaShort),
+         MetroShort = paste(MetroShort, State, sep = ', ')) %>%
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
+
+## filter to values past Jan 2017
+df3 <- df2 %>% filter(date > as.Date('2017-01-01'))
+
+## Get panel for pre-period
+df5 <- df3 %>% mutate(date = as.Date(date)) %>%
+  group_by(zip) %>% mutate(
+    zhvi = na.approx(zhvi, na.rm=FALSE),
+    pre_pct_change = (zhvi - lag(zhvi, dif_pre_period))/((zhvi + lag(zhvi, dif_pre_period))/2)*100 
+  ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
+  group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
+  inner_join(chars, by = 'zip') %>%
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
+         land_area > .1, `2019 Population` > 100)
+
+## Get panel for post-period
+df4 <- df3 %>% mutate(date = as.Date(date)) %>%
+  group_by(zip) %>% mutate(
+    zhvi = na.approx(zhvi, na.rm=FALSE),
+    post_pct_change = (zhvi - lag(zhvi, dif_period))/((zhvi + lag(zhvi, dif_period))/2)*100
+  ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
+  group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
+  inner_join(chars, by = 'zip') %>%
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
+         land_area > .1, `2019 Population` > 100)
+
+## Merge, filter, and save (all metros)
+df6 <- df4 %>% dplyr::select(zip, post_pct_change) %>% inner_join(df5, by = 'zip') %>%
+  filter(!is.na(dist_to_cbd), !is.na(log(density2019)), !is.infinite(log(density2019))) %>% 
+  write_csv('./data/zhvi_panel_zips.csv')
+
+## Write to csv (top 12 metros)
+df6 %>% filter(MetroShort %in% cities) %>%
+  write_csv('./data/zhvi_panel_zips_top12.csv')
+
+
+###########################################
+# This section of the script creates the 
+# MSA level home value index pct change file
+###########################################
+
+## Read in home value index dataset
+df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_month.csv?t=1631634893') %>%
+  rename(MetroShort = RegionName) %>%
+  mutate(MetroShort = sub(",.*", "", MetroShort),
+         MetroShort = sub("-.*", "", MetroShort),
+         MetroShort = paste(MetroShort, StateName, sep = ', ')) 
+
+## Read in MSA-level characteristics
+msa_chars <- read_csv('./data/msa_all_chars.csv') %>%
+  filter(!is.na(MsaName))
+#377 MSAs
+
+## Create post-period dataset
+df3 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, RegionType, StateName),
+                           names_to = 'date', values_to = 'zhvi') %>% 
+  mutate(date = as.Date(date)) %>%
+  group_by(MetroShort) %>% mutate(
+    zhvi = na.approx(zhvi, na.rm=FALSE),
+    post_pct_change = (zhvi - lag(zhvi, dif_period))/((zhvi + lag(zhvi, dif_period))/2)*100,
+  ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
+  group_by(MetroShort) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE))
+
+## Create pre-period dataset
+df4 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, RegionType, StateName),
+                           names_to = 'date', values_to = 'zhvi') %>% 
+  mutate(date = as.Date(date)) %>%
+  group_by(MetroShort) %>% mutate(
+    zhvi = na.approx(zhvi, na.rm=FALSE),
+    pre_pct_change = (zhvi - lag(zhvi, dif_pre_period))/((zhvi + lag(zhvi, dif_pre_period))/2)*100,
+  ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
+  group_by(MetroShort) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE))
+
+df5 <- df3 %>% left_join(df4, by = 'MetroShort') %>% left_join(msa_chars, by = 'MetroShort') %>% 
+  filter(!is.na(wfh_emp)) %>%
+  write_csv('./data/msa_zhvi.csv')
+
+###########################################
+# This section of the script creates the rental index panel
+###########################################
+
+## Read in data
+df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_uc_sfrcondomfr_sm_month.csv?t=1720907287', 
+               col_types = cols(RegionName = col_double())) %>% rename(zip = 'RegionName') %>%
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, Metro, CountyName)) %>% 
+  pivot_longer(!zip, names_to = 'date', values_to = 'zori') %>%
+  mutate(date = as.Date(as.yearmon(date)) + 14)
+chars <- read_csv('./data/zip_all_chars_cbd.csv')
+
+## Define top 12 metros
+cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
+            'Los Angeles, CA', 'Washington, DC', 'Atlanta, GA', 'Miami, FL',
+            'Philadelphia, PA', 'Dallas, TX', 'Houston, TX', 'Phoenix, AZ')
+
+## Create post-period panel
+df4 <- df %>% mutate(date = as.Date(date)) %>%
+  group_by(zip) %>% mutate(
+    zori = na.approx(zori, na.rm=FALSE),
+    post_pct_change = (zori - lag(zori, dif_period))/((zori + lag(zori, dif_period))/2)*100
+  ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
+  group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
+  inner_join(chars, by = 'zip') %>%
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
+         land_area > .1, `2019 Population` > 100)
+
+## create pre-period panel
+df3 <- df %>% mutate(date = as.Date(date)) %>%
+  group_by(zip) %>% mutate(
+    zori = na.approx(zori, na.rm=FALSE),
+    pre_pct_change = (zori - lag(zori, dif_pre_period))/((zori + lag(zori, dif_pre_period))/2)*100
+  ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
+  group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
+  inner_join(chars, by = 'zip') %>%
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
+         land_area > .1, `2019 Population` > 100)
+
+## Write panel to CSV (with top 100 metros)
+df6 <- df4 %>% dplyr::select(zip, post_pct_change) %>% inner_join(df3, by = 'zip') %>%
+  mutate(pp_growth = post_pct_change - pre_pct_change) %>%
+  filter(!is.na(dist_to_cbd)) %>% 
+  write_csv('./data/zori_panel_zips.csv')
+
+## Write panel to CSV (with top 12 metros)
+df6 %>% filter(MetroShort %in% cities) %>%
+  write_csv('./data/zori_panel_zips_top12.csv')
+
+###########################################
+# This section of the script creates the 
+# MSA level rent value index pct change file
+###########################################
+
+## Read in home value index dataset
+df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zori/Metro_zori_uc_sfrcondomfr_sm_month.csv?t=1720907287') %>%
+  separate(RegionName, c("MetroShort", "StateName"), sep = ', ') %>%
+  filter(!is.na(StateName)) %>%
+  mutate(MetroShort = sub("-.*", "", MetroShort),
+         MetroShort = paste(MetroShort, StateName, sep = ', ')) %>%
+  dplyr::select(!c(RegionID, SizeRank, StateName, RegionType))
+
+###this doesn't work anymore fix it
+
+## Read in MSA-level characteristics
+msa_chars <- read_csv('./data/msa_all_chars.csv') %>%
+  filter(!is.na(MsaName))
+#377 MSAs
+
+## Create post-period dataset
+df3 <- df %>% pivot_longer(!MetroShort,
+                           names_to = 'date', values_to = 'zori') %>% 
+  mutate(date = as.Date(as.yearmon(date)) + 14) %>%
+  group_by(MetroShort) %>% mutate(
+    zori = na.approx(zori, na.rm=FALSE),
+    post_pct_change = (zori - lag(zori, dif_period))/((zori + lag(zori, dif_period))/2)*100,
+  ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
+  group_by(MetroShort) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE))
+
+## Create pre-period dataset
+df4 <- df %>% pivot_longer(!MetroShort,
+                           names_to = 'date', values_to = 'zori') %>% 
+  mutate(date = as.Date(as.yearmon(date)) + 14) %>%
+  group_by(MetroShort) %>% mutate(
+    zori = na.approx(zori, na.rm=FALSE),
+    pre_pct_change = (zori - lag(zori, dif_pre_period))/((zori + lag(zori, dif_pre_period))/2)*100,
+  ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
+  group_by(MetroShort) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE))
+
+df5 <- df3 %>% left_join(df4, by = 'MetroShort') %>% left_join(msa_chars, by = 'MetroShort') %>% 
+  filter(!is.na(wfh_emp)) %>%
+  write_csv('./data/msa_zori.csv')
+

@@ -1,0 +1,14 @@
+census-api-local.R
+*.png
+*.doc
+
+###big datasets
+data/USPS_zips_no_impute.csv
+data/USPS_zips.csv
+data/external_data/mastercard/*
+data/external_data/USPS_gsb/*
+data/external_data/USPS_online/*
+data/*
+
+###figures and tables
+figures-tables/*

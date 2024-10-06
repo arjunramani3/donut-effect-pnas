@@ -11,4 +11,5 @@ data/external_data/USPS_online/*
 data/*
 
 ###figures and tables
-figures-tables/*
+figures-tables/cities/*
+figures-tables/cities-categories/*

@@ -17,8 +17,8 @@ pkgTest <- function(x) {
 }
 
 ## These lines load the required packages
-packages <- c("tidyverse", "zoo", "directlabels", "cowplot", "pracma", 
-              "lubridate", "readxl", "stringr", "forecast", 'binsreg')
+packages <- c("tidyverse", "zoo", "directlabels", "cowplot", "pracma", "sandwich",
+              "lubridate", "readxl", "stringr", "forecast", 'binsreg', "lmtest")
 
 lapply(packages, pkgTest);
 
@@ -27,6 +27,7 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
             'Philadelphia, PA', 'Dallas, TX', 'Houston, TX', 'Phoenix, AZ')
 
 cbd_radius = 3218.69 #2 mile cbd radius in meters
+meters_per_mile = 1609.34 #number of meters in a mile
 
 #define colors
 black <- "#2E2D29"; cardinal <- "#B1040E"; teal <- "#66b2b2"; green <- "#228B22"; marmalade <- "#d16002"
@@ -656,14 +657,14 @@ ggsave('./figures-tables/figS3a.png', plot = last_plot(), width = 10, height = 8
 # Figure S4a. Donut vs distance, average val in past year, USPS
 ####################################
 library(Hmisc)
-start_date = '2018-01-01'; end_date = '2023-09-01'
+start_date = '2018-01-01'; end_date = '2023-07-01'
 chars <- read_csv('./data/zip_all_chars_cbd.csv', col_types = cols('zip' = col_integer()))
 usps <- read_csv('./data/USPS_zips.csv') %>% filter(zip != 2047)
 
 ## A. population flows
 #construct dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
-  mutate(dist_rank =  cut(dist_to_cbd/1000, 
+  mutate(dist_rank =  cut(dist_to_cbd/meters_per_mile, 
                           breaks=c(0,2,5,10,15,20,25,30,35,40,45, 50, Inf), 
                           labels=c(2,5,10,15,20,25,30,35,40,45, 50, Inf))) %>%
   inner_join(usps, by = 'zip') %>% 
@@ -706,7 +707,7 @@ temp2 %>% ggplot(aes(x = dist_rank, y = net_pop_mean, color=group)) +
         legend.position="none"
   ) 
 
-ggsave("./figures-tables/figs3a_usps_distance.png", width=10, height=8)
+ggsave("./figures-tables/figs4a_usps_distance.png", width=10, height=8)
 
 ####################################
 # Figure S4b. Donut vs distance, average val in past year, Mastercard
@@ -717,7 +718,7 @@ df = df %>% select(old_city_name, iso, date, distance_column, distance_val, donu
   left_join(city_chars, by=c('old_city_name', 'iso')) 
 
 # March 2020 till Sep 2022 is 31 months, till May 2022 is 26 months
-df2 = df %>% filter(date >= as.Date("2023-01-01"), date < as.Date("2023-10-01")) %>%
+df2 = df %>% filter(date >= as.Date("2022-10-01"), date < as.Date("2023-10-01")) %>%
   group_by(city, distance_val) %>% summarise(donut_cumulative_post=-1*mean(donut_effect_cumulative, na.rm=TRUE),
                                              population = mean(population2, na.rm=TRUE)) %>%
   group_by(city) %>% filter(n() == 10) %>% #filters out cities that have missing values
@@ -736,7 +737,7 @@ df2 %>% ggplot(aes(x = distance_val, y = donut_cumulative_mean, color = group)) 
                   ymax = donut_cumulative_mean + donut_cumulative_sd),
               alpha = 0.2) + 
   labs(x  = "Distance from city center", 
-       y = "Divergence in spending growth\nCity centers vs suburds, 2023H1, % points",
+       y = "Average relative spending growth\nCity center - outer ring, % points",
        size = 10
   ) +
   theme_minimal()+
@@ -747,7 +748,7 @@ df2 %>% ggplot(aes(x = distance_val, y = donut_cumulative_mean, color = group)) 
         axis.text.y = element_text(size = 20),
         legend.position = 'none'
   ) 
-ggsave('./figures-tables/figs3b_donut_by_distance_all.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/figs4b_donut_by_distance_all.png', plot = last_plot(), width = 10, height = 8)
 df2 %>% write_csv('./data/output/figs4b.csv')
 
 ###########################################
@@ -1101,7 +1102,7 @@ ggplot(df_post, aes(wfh_days, donut_post)) +
   geom_dl(aes(label = iso), method = list(cex = 0.8, "last.points", "bumpup")) +
   annotate("text", x = .7, y = -80, label = equation_text, hjust = 0, vjust = 0, size = 5) +
   labs(x  = "WFH days per week in 2023, GSWA", 
-       y = "Average donut\nApril 2022 to 2023",
+       y = "Spending growth, outer ring - city center\nAvg from Sep 2022-23",
        size = 10
   ) +
   theme_minimal()+
@@ -1180,7 +1181,7 @@ data.line <- binscatter$data.plot$`Group Full Sample`$data.poly
 
 ggplot() + geom_point(data=data.dots, aes(x=x, y=fit), size=3, colour=teal) +
   geom_line(data=data.line, aes(x=x, y=fit), size = 1.5, colour=teal) +
-  theme_bw() + labs(x="City's observed WFH share from WFH Map, 2023 avg", y="Cumulative net pop ouflow\n Mar 2022-Feb 2023") +
+  theme_bw() + labs(x="City's observed WFH share from WFH Map, 2023 avg", y="Cumulative net pop ouflow till Feb 2023\nOuter ring - city center") +
   annotate("text", x = 20, y = 2, label = equation_text, hjust = 0, vjust = 0, size = 5) + 
   theme(axis.title = element_text(size = 20),
         axis.text = element_text(size = 20),

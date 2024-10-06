@@ -20,6 +20,12 @@ rse <- function(reg) {
   return(as.vector(summary(reg, robust = T)$coefficients[,"Std. Error"]))
 } 
 
+## Create function to get clustered standard errors at the iso level
+cle_iso <- function(model) {
+  cl_se = vcovCL(model, cluster = ~ iso) #get clustered covariance matrix
+  return(sqrt(diag(cl_se))) #get diagonal and take square root to get std. errors
+}
+
 ## Create function to get clustered standard errors
 cle <- function(model) {
   cl_se = vcovCL(model, cluster = ~ MetroShort) #get clustered covariance matrix
@@ -119,7 +125,8 @@ m6 <- lm(donut_post ~ log(wfh_share), data = df_post, weights=df_post$population
 m7 <- lm(donut_post ~ log(cumulative_lockdown) + log(gdp_capita) + log(wfh_share), data = df_post, weights=df_post$population2)
 
 stargazer(list(m0, m1, m2, m3, m4, m5, m6, m7), 
-          se = list(rse(m0), rse(m1), rse(m2), rse(m3), rse(m4), rse(m5), rse(m6), rse(m7)),
+          se = list(rse(m0), rse(m1), rse(m2), rse(m3), cle_iso(m4), cle_iso(m5), cle_iso(m6), cle_iso(m7)),
+          omit = c("iso"),
           omit.stat=c("adj.rsq", "ser","f"), 
           type="html", out="./figures-tables/tab0.doc")
 

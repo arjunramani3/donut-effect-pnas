@@ -1,12 +1,10 @@
 ###########################################
 # robustness_checks.R
 # check whether mastercard data matches other major datasets
-# 1. USPS ~ Mastercard
-# 2. USPS ~ Census
-# 3. USPS ~ Inrix
-# 4. USPS ~ Zillow
-# 5. Data Axle ~ USPS
-# 6. Data Axle ~ Census
+# 1. Zillow ~ USPS
+# 2. Census ~ USPS
+# 3. Census ~ Data Axle
+# 4. USPS ~ Data Axle
 ###########################################
 
 ## Preliminaries

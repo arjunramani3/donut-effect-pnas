@@ -1,8 +1,8 @@
 # donut-effect-pnas
-Replication code for "How working from home reshapes cities" by Arjun Ramani, Joel Alcedo and Nicholas Bloom published in the Proceedings of the National Academy of Sciences in 2024. An earlier version of this project was NBER working paper 28876: https://www.nber.org/system/files/working_papers/w28876/w28876.pdf and Arjun's undergraduate thesis at Stanford: https://economics.stanford.edu/donut-effect-how-work-home-impacts-migration-patterns-and-real-estate-markets
+Replication code for "How working from home reshapes cities" by Arjun Ramani, Joel Alcedo and Nicholas Bloom accepted for publication in the Proceedings of the National Academy of Sciences in 2024. Earlier versions of this project were NBER working paper 28876: https://www.nber.org/system/files/working_papers/w28876/w28876.pdf and Arjun's undergraduate thesis at Stanford: https://economics.stanford.edu/donut-effect-how-work-home-impacts-migration-patterns-and-real-estate-markets
 
 ## Replication file instructions
-This repository contains all data and scripts necessary to replicate the figures and tables found in the paper. You may need R version 3.6.2 or later to successfully run.
+This repository contains all data and scripts necessary to replicate the figures and tables found in the paper using R.
 
 ### Creating all figures and tables from intermediate datasets
 
@@ -21,8 +21,10 @@ Some of the datasets used in this process must be downloaded from various locati
 - `persistence.R` contains code to measure persistence of the Donut Effect
 - `robustness_checks.R` contains code to validate our various datasets by plotting different measures of the Donut Effect against each other
 
-### Global city level data (not reported in the paper but available for research use)
-- `mastercard-cities.xlsx` contains data for city-level Donut Effect plots for 118 global cities. The structure of this data is same as the main Figure 1. For each city, the dataset contains monthly time series of the difference in spending between a city center spending index and an outer ring spending index. The spending indices are first normalized such that the average 2019 value = 100. Thus the difference, which we report, will have an average 2019 value of 0. Our spending data contains all in-person credit or debit card spending on the Mastercard network from Jan 2018 to Sep 2023. For category-wise spending we have data till Dec 2023
-
+### Proprietary data
+This paper relies on a handful of proprietary datasets. The repository contains all data we are permitted to share. Data where we face restrictions are the following:
+1) Data Axle: contains the universe of US households with addresses from 2017Q1 to 2021Q4. This data is only accessible through a secure server hosted at the Stanford Graduate School of Business. We only report aggregated summary stats as part of a data agreement with Data Axle. See 'Zip_code_zip_code_flows_output_v3.csv' and 'Zip_code_zip_code_flows__control__output_v3.csv' for zip code-zip code flows prepandemic and postpandemic.
+2) Inrix commuting data: contains the universe of GPS-connected car trips from a major US auto manufacturer. We only report aggregate summary stats as part of an agreement with Inrix. See 'inrix.xlsx' for metro level commute stats.
+3) Mastercard data: contains the near universe of in-person transactions on the Mastercard card network. In the paper, we report aggregated spending indices to track how city centers perform relative to suburbs as part of a data agreement with Mastercard. See 'donut_figures.R', Figures 1, S2, S4, S9, S10, for paths to the intermediate data to recreate our Mastercard charts.
 
 

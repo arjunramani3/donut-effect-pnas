@@ -1,5 +1,5 @@
 # donut-effect-pnas
-Replication code for "How working from home reshapes cities" by Arjun Ramani, Joel Alcedo and Nicholas Bloom accepted for publication in the Proceedings of the National Academy of Sciences in 2024. Earlier versions of this project were NBER working paper 28876: https://www.nber.org/system/files/working_papers/w28876/w28876.pdf and Arjun's undergraduate thesis at Stanford: https://economics.stanford.edu/donut-effect-how-work-home-impacts-migration-patterns-and-real-estate-markets
+Replication code for "How working from home reshapes cities" by Arjun Ramani, Joel Alcedo and Nicholas Bloom accepted for publication in the Proceedings of the National Academy of Sciences in September 2024. Earlier versions of this project were NBER working paper 28876: https://www.nber.org/system/files/working_papers/w28876/w28876.pdf and Arjun's undergraduate thesis at Stanford: https://economics.stanford.edu/donut-effect-how-work-home-impacts-migration-patterns-and-real-estate-markets
 
 ## Replication file instructions
 This repository contains all data and scripts necessary to replicate the figures and tables found in the paper using R.
